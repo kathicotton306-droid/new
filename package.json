@@ -1,0 +1,17 @@
+{
+  "name": "nebula-omega-desktop",
+  "private": true,
+  "version": "2.0.0",
+  "description": "NEBULA OMEGA cinematic desktop experience",
+  "scripts": {
+    "dev": "npm run build:frontend && tauri dev",
+    "build:frontend": "node scripts/build-frontend.mjs",
+    "build": "npm run build:frontend && tauri build",
+    "build:nsis": "npm run build:frontend && tauri build --bundles nsis"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "terser": "^5.36.0",
+    "javascript-obfuscator": "^4.1.1"
+  }
+}
