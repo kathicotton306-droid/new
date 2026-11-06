@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "NEBULA OMEGA",
+  "version": "2.0.0",
+  "identifier": "app.nebulaomega.desktop",
+  "build": {
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "NEBULA OMEGA",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 1000,
+        "minHeight": 650,
+        "backgroundColor": "#060A12",
+        "center": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "icon": [
+      "icons/icon.ico",
+      "icons/icon.png"
+    ],
+    "windows": {
+      "nsis": {
+        "displayLanguageSelector": false,
+        "languages": [
+          "English"
+        ]
+      }
+    }
+  }
+}

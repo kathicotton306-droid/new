@@ -1,0 +1,16 @@
+[package]
+name = "nebula-omega"
+version = "2.0.0"
+description = "NEBULA OMEGA desktop cinematic experience"
+authors = ["NEBULA OMEGA"]
+edition = "2021"
+
+[lib]
+name = "nebula_omega_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
